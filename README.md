@@ -294,14 +294,15 @@ To switch evaluator to Gemini:
 - License: See `LICENSE` in the repository (if present).
 - Medical Disclaimer: This software is for research and educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
 
-```<!-- filepath: README.md -->
+```
+<!-- filepath: README.md -->
 # AI Agent Automation (Medical Diagnostics)
 
 A multi-agent system that analyzes patient medical reports using specialized AI “experts” (Cardiologist, Psychologist, Pulmonologist) and synthesizes their findings into a final, concise recommendation. Includes a Flask web API/UI and an evaluator to benchmark model performance on a large synthetic dataset.
 
 > Note: This README reflects the structure and code found in this project (CLI app, Flask API, Agents in `Utils/Agents.py`, and evaluator in `Utils/evaluate_agent.py`). Verify model/provider settings and environment variables before running.
 
----
+```
 
 
 ## Name: Divyansh Gupta
