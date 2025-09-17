@@ -1,0 +1,16 @@
+{
+  "train": [
+    {
+      "input": "Patient reports anxiety, poor sleep, and rapid heartbeat.",
+      "output": "Likely anxiety disorder. Recommend CBT and relaxation techniques."
+    },
+    {
+      "input": "Patient feels sad, loss of interest, and fatigue.",
+      "output": "Possible depression. Suggest counseling and screening for major depressive disorder."
+    },
+    {
+      "input": "Patient reports frequent panic attacks with chest tightness.",
+      "output": "Panic disorder suspected. Recommend therapy and breathing exercises."
+    }
+  ]
+}

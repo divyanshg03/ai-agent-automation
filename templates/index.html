@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Medical Diagnostics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .input-section, .results-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            color: #1976D2;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 30px;
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+            border-radius: 2px;
+        }
+
+        .input-area {
+            margin-bottom: 20px;
+        }
+
+        .input-area label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .medical-report-input {
+            width: 100%;
+            height: 300px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+
+        .medical-report-input:focus {
+            outline: none;
+            border-color: #2196F3;
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+        }
+
+        .analyze-btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .analyze-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .analyze-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid transparent;
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        .analyze-btn.loading .loading-spinner {
+            display: block;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .agents-status {
+            margin-top: 20px;
+        }
+
+        .agent-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .agent-card.processing {
+            border-color: #ffc107;
+            background: #fff8e1;
+        }
+
+        .agent-card.completed {
+            border-color: #4caf50;
+            background: #e8f5e8;
+        }
+
+        .agent-card.error {
+            border-color: #f44336;
+            background: #ffebee;
+        }
+
+        .agent-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .cardiologist { background: #e74c3c; }
+        .psychologist { background: #9b59b6; }
+        .pulmonologist { background: #3498db; }
+
+        .agent-info h4 {
+            margin: 0;
+            color: #333;
+        }
+
+        .agent-info p {
+            margin: 5px 0 0 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .results-content {
+            min-height: 300px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #666;
+            padding: 40px 20px;
+        }
+
+        .empty-state-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .diagnosis-result {
+            background: #f8f9fa;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .diagnosis-result h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .diagnosis-text {
+            line-height: 1.6;
+            color: #333;
+            white-space: pre-wrap;
+        }
+
+        .agent-reports {
+            margin-top: 30px;
+        }
+
+        .report-tabs {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            color: #666;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button.active {
+            color: #2196F3;
+            border-bottom-color: #2196F3;
+        }
+
+        .tab-content {
+            display: none;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .sample-report-btn {
+            background: #17a2b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .sample-report-btn:hover {
+            background: #138496;
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            background: #ffebee;
+            border: 1px solid #f44336;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .input-section, .results-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>🩺 AI Medical Diagnostics</h1>
+                <p>Advanced Multi-Agent Analysis for Comprehensive Medical Assessment</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <h2 class="section-title">📋 Medical Report Input</h2>
+                
+                <button class="sample-report-btn" onclick="loadSampleReport()">
+                    📄 Load Sample Report
+                </button>
+
+                <div class="input-area">
+                    <label for="medicalReport">Enter Medical Report:</label>
+                    <textarea 
+                        id="medicalReport" 
+                        class="medical-report-input"
+                        placeholder="Paste the medical report here...
+
+Example:
+Medical Case Report
+Patient ID: 345678
+Name: [Patient Name]
+Age: [Age]
+Gender: [Gender]
+Date of Report: [Date]
+
+Chief Complaint:
+[Patient's primary symptoms and concerns...]
+
+Medical History:
+[Previous diagnoses, treatments, family history...]
+
+Physical Examination Findings:
+[Examination results...]
+
+Recent Lab and Diagnostic Results:
+[Test results...]"
+                    ></textarea>
+                </div>
+
+                <button class="analyze-btn" onclick="analyzeReport()">
+                    <div class="loading-spinner"></div>
+                    <span class="btn-text">🔍 Analyze Report</span>
+                </button>
+
+                <div class="agents-status">
+                    <h3 style="margin-bottom: 15px;">AI Specialists Status</h3>
+                    <div class="agent-card" id="cardiologist-status">
+                        <div class="agent-icon cardiologist">❤️</div>
+                        <div class="agent-info">
+                            <h4>Cardiologist Agent</h4>
+                            <p>Ready to analyze cardiovascular aspects</p>
+                        </div>
+                    </div>
+                    <div class="agent-card" id="psychologist-status">
+                        <div class="agent-icon psychologist">🧠</div>
+                        <div class="agent-info">
+                            <h4>Psychologist Agent</h4>
+                            <p>Ready to assess psychological factors</p>
+                        </div>
+                    </div>
+                    <div class="agent-card" id="pulmonologist-status">
+                        <div class="agent-icon pulmonologist">🫁</div>
+                        <div class="agent-info">
+                            <h4>Pulmonologist Agent</h4>
+                            <p>Ready to evaluate respiratory conditions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <h2 class="section-title">📊 Analysis Results</h2>
+                
+                <div class="results-content" id="resultsContent">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🔬</div>
+                        <h3>No Analysis Yet</h3>
+                        <p>Enter a medical report and click "Analyze Report" to begin the AI analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // API Base URL
+        const API_BASE_URL = window.location.origin;
+
+        async function loadSampleReport() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/sample-report`);
+                const data = await response.json();
+                
+                if (data.sample_report) {
+                    document.getElementById('medicalReport').value = data.sample_report;
+                } else if (data.error) {
+                    showError('Error loading sample report: ' + data.error);
+                }
+            } catch (error) {
+                console.error('Error loading sample report:', error);
+                showError('Failed to load sample report. Please check your connection.');
+            }
+        }
+
+        function updateAgentStatus(agentId, status, message = null) {
+            const agentCard = document.getElementById(agentId + '-status');
+            const agentInfo = agentCard.querySelector('.agent-info p');
+            
+            agentCard.className = 'agent-card ' + status;
+            
+            if (message) {
+                agentInfo.textContent = message;
+            } else {
+                switch(status) {
+                    case 'processing':
+                        agentInfo.textContent = 'Analyzing report...';
+                        break;
+                    case 'completed':
+                        agentInfo.textContent = 'Analysis complete ✓';
+                        break;
+                    case 'error':
+                        agentInfo.textContent = 'Analysis failed ✗';
+                        break;
+                    default:
+                        agentInfo.textContent = 'Ready to analyze';
+                }
+            }
+        }
+
+        async function analyzeReport() {
+            const reportText = document.getElementById('medicalReport').value.trim();
+            
+            if (!reportText) {
+                showError('Please enter a medical report first.');
+                return;
+            }
+
+            const analyzeBtn = document.querySelector('.analyze-btn');
+            const btnText = document.querySelector('.btn-text');
+            
+            // Update button state
+            analyzeBtn.disabled = true;
+            analyzeBtn.classList.add('loading');
+            btnText.textContent = 'Analyzing...';
+
+            // Reset agent statuses
+            updateAgentStatus('cardiologist', 'processing');
+            updateAgentStatus('psychologist', 'processing');
+            updateAgentStatus('pulmonologist', 'processing');
+
+            // Clear previous results
+            clearResults();
+
+            try {
+                // Send request to backend API
+                const response = await fetch(`${API_BASE_URL}/api/analyze`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        medical_report: reportText
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Update agent statuses to completed
+                    updateAgentStatus('cardiologist', 'completed');
+                    updateAgentStatus('psychologist', 'completed');
+                    updateAgentStatus('pulmonologist', 'completed');
+                    
+                    // Show results
+                    showResults(data.results);
+                } else {
+                    // Handle errors
+                    if (data.errors) {
+                        Object.keys(data.errors).forEach(agentName => {
+                            const agentId = agentName.toLowerCase();
+                            updateAgentStatus(agentId, 'error', data.errors[agentName]);
+                        });
+                    }
+                    showError(data.error || 'Analysis failed. Please try again.');
+                }
+
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError('Network error. Please check your connection and try again.');
+                
+                // Update all agents to error state
+                updateAgentStatus('cardiologist', 'error');
+                updateAgentStatus('psychologist', 'error');
+                updateAgentStatus('pulmonologist', 'error');
+            } finally {
+                // Reset button
+                analyzeBtn.disabled = false;
+                analyzeBtn.classList.remove('loading');
+                btnText.textContent = '🔍 Analyze Report';
+            }
+        }
+
+        function showResults(results) {
+            const resultsContent = document.getElementById('resultsContent');
+            
+            resultsContent.innerHTML = `
+                <div class="diagnosis-result">
+                    <h3>✅ Final Diagnosis</h3>
+                    <div class="diagnosis-text">${results.final_diagnosis}</div>
+                </div>
+
+                <div class="agent-reports">
+                    <h3 style="margin-bottom: 20px;">Specialist Reports</h3>
+                    <div class="report-tabs">
+                        <button class="tab-button active" onclick="showTab('cardiologist')">❤️ Cardiologist</button>
+                        <button class="tab-button" onclick="showTab('psychologist')">🧠 Psychologist</button>
+                        <button class="tab-button" onclick="showTab('pulmonologist')">🫁 Pulmonologist</button>
+                    </div>
+                    
+                    <div id="cardiologist-tab" class="tab-content active">
+                        <h4>Cardiovascular Assessment</h4>
+                        <p>${results.cardiologist}</p>
+                    </div>
+                    
+                    <div id="psychologist-tab" class="tab-content">
+                        <h4>Psychological Assessment</h4>
+                        <p>${results.psychologist}</p>
+                    </div>
+                    
+                    <div id="pulmonologist-tab" class="tab-content">
+                        <h4>Pulmonary Assessment</h4>
+                        <p>${results.pulmonologist}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showTab(tabName) {
+            // Remove active class from all tabs and buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to selected tab and button
+            document.querySelector(`button[onclick="showTab('${tabName}')"]`).classList.add('active');
+            document.getElementById(tabName + '-tab').classList.add('active');
+        }
+
+        function showError(message) {
+            const resultsContent = document.getElementById('resultsContent');
+            resultsContent.innerHTML = `
+                <div class="error-message">
+                    <strong>Error:</strong> ${message}
+                </div>
+                <div class="empty-state">
+                    <div class="empty-state-icon">⚠️</div>
+                    <h3>Analysis Failed</h3>
+                    <p>Please try again or check the medical report format.</p>
+                </div>
+            `;
+        }
+
+        function clearResults() {
+            const resultsContent = document.getElementById('resultsContent');
+            resultsContent.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">⏳</div>
+                    <h3>Analysis in Progress</h3>
+                    <p>AI specialists are analyzing the medical report...</p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
