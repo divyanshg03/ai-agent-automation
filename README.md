@@ -23,7 +23,7 @@ The system uses a team of specialized AI agents, each trained for a specific med
 - Python 3.8+
 - Flask
 - LangChain
-- Google Generative AI API key (for Gemini model)
+- openai/gpt-oss-120b
 
 ### Installation
 1. Clone the repository
@@ -40,7 +40,7 @@ The system uses a team of specialized AI agents, each trained for a specific med
 3. Set up environment variables
    ```
    # Create a .env file with your API key
-   GOOGLE_API_KEY=your_api_key_here
+   GROQ_API_KEY=your_api_key_here
    ```
 
 ## Usage
