@@ -16,8 +16,7 @@ except ImportError:
 
 # Load environment variables
 load_dotenv(dotenv_path='.env')
-
-# Initialize Flask app
+  
 app = Flask(__name__)
 CORS(app)  # Enable CORS for API calls
 

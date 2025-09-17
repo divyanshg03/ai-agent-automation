@@ -1,0 +1,3032 @@
+{
+  "config": {
+    "model_id": "openai/gpt-oss-120b",
+    "dataset_size": 10000,
+    "evaluated": 300,
+    "seed": 42
+  },
+  "results": [
+    {
+      "id": 0,
+      "type": "math",
+      "prompt": "What is 664 plus 124?",
+      "expected": "788",
+      "response": "664 + 124 = 788.",
+      "score": 1.0
+    },
+    {
+      "id": 1,
+      "type": "capital",
+      "prompt": "What is the capital of poland?",
+      "expected": "warsaw",
+      "response": "The capital of Poland is **Warsaw**.",
+      "score": 1.0
+    },
+    {
+      "id": 2,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 3,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (briefly)**  \n\n- **Statement:** The net force acting on an object is equal to the product of its mass and its acceleration.  \n- **Formula:** \\(\\displaystyle \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\\)  \n\n**Key points**\n\n| Aspect | Explanation |\n|--------|-------------|\n|",
+      "score": 0.0
+    },
+    {
+      "id": 4,
+      "type": "math",
+      "prompt": "Compute 614 + 442.",
+      "expected": "1056",
+      "response": "614 + 442 = **1,056**.",
+      "score": 0.0
+    },
+    {
+      "id": 5,
+      "type": "capital",
+      "prompt": "What is the capital of denmark?",
+      "expected": "copenhagen",
+      "response": "The capital of Denmark is **Copenhagen**. It’s located on the eastern coast of the island of Zealand and is the country’s largest city, serving as its cultural, economic, and political hub.",
+      "score": 1.0
+    },
+    {
+      "id": 6,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Iliad”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 7,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\n- **Statement:** The net force acting on an object is equal to the rate of change of its momentum. In most everyday situations where the mass \\(m\\) is constant, this simplifies to  \n\n\\[\n\\boxed{ \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a} }\n\\]\n\n- **Key ideas**\n  - **Force (\\(\\mathbf{F}\\))** is a vector; it has both magnitude",
+      "score": 0.0
+    },
+    {
+      "id": 8,
+      "type": "math",
+      "prompt": "What is 743 minus 675?",
+      "expected": "68",
+      "response": "743 − 675 = 68.",
+      "score": 1.0
+    },
+    {
+      "id": 9,
+      "type": "capital",
+      "prompt": "Name the capital city of finland.",
+      "expected": "helsinki",
+      "response": "The capital city of Finland is **Helsinki**.",
+      "score": 1.0
+    },
+    {
+      "id": 10,
+      "type": "author",
+      "prompt": "Name the author of the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **the *Iliad* was traditionally attributed to the ancient Greek poet *Homer*.**",
+      "score": 1.0
+    },
+    {
+      "id": 11,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\n- **Statement:** The net force acting on an object is equal to the rate of change of its momentum. In most everyday situations where the mass \\(m\\) of the object is constant, this simplifies to  \n\n\\[\n\\boxed{ \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a} }\n\\]\n\n- **Key points**\n  1. **Force (\\(\\mathbf{F}\\))** is a",
+      "score": 0.0
+    },
+    {
+      "id": 12,
+      "type": "math",
+      "prompt": "Compute 724 + 442.",
+      "expected": "1166",
+      "response": "724 + 442 = **1,166**.",
+      "score": 0.0
+    },
+    {
+      "id": 13,
+      "type": "capital",
+      "prompt": "Name the capital city of denmark.",
+      "expected": "copenhagen",
+      "response": "The capital city of Denmark is **Copenhagen**.",
+      "score": 1.0
+    },
+    {
+      "id": 14,
+      "type": "author",
+      "prompt": "Who wrote 'hamlet'?",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "*Hamlet* was written by William Shakespeare.",
+      "score": 1.0
+    },
+    {
+      "id": 15,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll in chloroplasts, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) absorbed through roots. The light‑driven reactions split water, releasing oxygen (O₂) as a by‑product, and generate energy‑rich molecules (ATP and NADPH). In the Calvin cycle (the “dark",
+      "score": 0.0
+    },
+    {
+      "id": 16,
+      "type": "math",
+      "prompt": "What is 377 plus 877?",
+      "expected": "1254",
+      "response": "377 + 877 = **1,254**.",
+      "score": 0.0
+    },
+    {
+      "id": 17,
+      "type": "capital",
+      "prompt": "Italy's capital is?",
+      "expected": "rome",
+      "response": "Italy's capital is **Rome**.",
+      "score": 1.0
+    },
+    {
+      "id": 18,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The author traditionally credited with composing **The Odyssey** is the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 19,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (F = m a)**  \n\n- **Force (F)** is the push or pull applied to an object.  \n- **Mass (m)** measures the amount of matter (inertia) in the object; it resists changes in motion.  \n- **Acceleration (a)** is the rate",
+      "score": 0.0
+    },
+    {
+      "id": 20,
+      "type": "math",
+      "prompt": "Add 90 and 575.",
+      "expected": "665",
+      "response": "90 + 575 = 665.",
+      "score": 1.0
+    },
+    {
+      "id": 21,
+      "type": "capital",
+      "prompt": "Usa's capital is?",
+      "expected": "washington",
+      "response": "The capital of the United States of America is **Washington, D.C.**.",
+      "score": 1.0
+    },
+    {
+      "id": 22,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 23,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion (in a nutshell)**  \n\n- **Statement:** The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.  \n\n- **Mathematical form:**  \n\\[\n\\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n\\]  \nwhere  \n- \\(\\mathbf{F}_{\\text{net}}\\) = vector",
+      "score": 0.0
+    },
+    {
+      "id": 24,
+      "type": "math",
+      "prompt": "Compute 687 - 243.",
+      "expected": "444",
+      "response": "687 − 243 = 444.",
+      "score": 1.0
+    },
+    {
+      "id": 25,
+      "type": "capital",
+      "prompt": "What is the capital of finland?",
+      "expected": "helsinki",
+      "response": "The capital of Finland is **Helsinki**.",
+      "score": 1.0
+    },
+    {
+      "id": 26,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The **Odyssey** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 27,
+      "type": "science",
+      "prompt": "How do plants convert light to energy?",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Plants turn sunlight into chemical energy through a process called **photosynthesis**.  The overall reaction can be written in a simplified form as:\n\n\\[\n6\\;CO_2 + 6\\;H_2O \\;+\\; light \\;\\longrightarrow\\; C_6H_{12}O_6 \\;+\\; 6\\;",
+      "score": 0.0
+    },
+    {
+      "id": 28,
+      "type": "math",
+      "prompt": "Add 176 and 389.",
+      "expected": "565",
+      "response": "176 + 389 = 565.",
+      "score": 1.0
+    },
+    {
+      "id": 29,
+      "type": "capital",
+      "prompt": "Austria's capital is?",
+      "expected": "vienna",
+      "response": "Vienna.",
+      "score": 1.0
+    },
+    {
+      "id": 30,
+      "type": "author",
+      "prompt": "Identify the writer of the work: war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The novel **“War and Peace”** was written by **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 31,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in brief)**  \n\n- **Statement:** The net force acting on an object is equal to the rate of change of its momentum. In most everyday situations where the mass of the object stays constant, this simplifies to  \n\n\\[\n\\boxed{ \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a} }\n\\]\n\nwhere  \n- \\(\\mathbf{F}_{\\text{net}}\\) = vector sum of all external forces",
+      "score": 0.0
+    },
+    {
+      "id": 32,
+      "type": "math",
+      "prompt": "What is 556 plus 756?",
+      "expected": "1312",
+      "response": "556 + 756 = **1,312**.",
+      "score": 0.0
+    },
+    {
+      "id": 33,
+      "type": "capital",
+      "prompt": "Name the capital city of united states.",
+      "expected": "washington",
+      "response": "The capital city of the United States is **Washington, D.C.**.",
+      "score": 1.0
+    },
+    {
+      "id": 34,
+      "type": "author",
+      "prompt": "Identify the writer of the work: war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The writer of *War and Peace* is **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 35,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over generations. It works through three basic steps:\n\n1. **Variation** – Individuals differ in traits because of mutations, gene shuffling (recombination), and other sources of genetic change.  \n2. **Inheritance** – Those genetic differences are passed from parents to offspring.  \n3. **Differential survival & reproduction** – In a",
+      "score": 0.0
+    },
+    {
+      "id": 36,
+      "type": "math",
+      "prompt": "Compute 711 - 342.",
+      "expected": "369",
+      "response": "711 − 342 = **369**.",
+      "score": 1.0
+    },
+    {
+      "id": 37,
+      "type": "capital",
+      "prompt": "What is the capital of finland?",
+      "expected": "helsinki",
+      "response": "The capital of Finland is **Helsinki**.",
+      "score": 1.0
+    },
+    {
+      "id": 38,
+      "type": "author",
+      "prompt": "Name the author of 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The author of *1984* is **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 39,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) to produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a by‑product. The overall reaction is:\n\n**6 CO₂ + 6 H₂O + light energy →",
+      "score": 0.0
+    },
+    {
+      "id": 40,
+      "type": "math",
+      "prompt": "Subtract 226 from 945.",
+      "expected": "719",
+      "response": "945 − 226 = 719.",
+      "score": 1.0
+    },
+    {
+      "id": 41,
+      "type": "capital",
+      "prompt": "What is the capital of russia?",
+      "expected": "moscow",
+      "response": "The capital of Russia is **Moscow**.",
+      "score": 1.0
+    },
+    {
+      "id": 42,
+      "type": "author",
+      "prompt": "Name the author of war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The author of *War and Peace* is **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 43,
+      "type": "science",
+      "prompt": "How do plants convert light to energy?",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Plants turn light into usable chemical energy through a process called **photosynthesis**. Here’s a step‑by‑step overview of how it works:\n\n---\n\n## 1. The Basics\n- **Organelles involved:** Chloroplasts (found in the cells of leaves and other green tissues).\n- **Key pigments:** Chlorophyll a, chlorophyll b, and accessory pigments (carotenoids, phyc",
+      "score": 0.0
+    },
+    {
+      "id": 44,
+      "type": "math",
+      "prompt": "Add 156 and 281.",
+      "expected": "437",
+      "response": "156 + 281 = 437.",
+      "score": 1.0
+    },
+    {
+      "id": 45,
+      "type": "capital",
+      "prompt": "Czech Republic's capital is?",
+      "expected": "prague",
+      "response": "The capital of the Czech Republic is **Prague**.",
+      "score": 1.0
+    },
+    {
+      "id": 46,
+      "type": "author",
+      "prompt": "Name the author of the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **the *Iliad* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 47,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 48,
+      "type": "math",
+      "prompt": "Compute 380 - 234.",
+      "expected": "146",
+      "response": "380 − 234 = 146.",
+      "score": 1.0
+    },
+    {
+      "id": 49,
+      "type": "capital",
+      "prompt": "Name the capital city of new zealand.",
+      "expected": "wellington",
+      "response": "The capital city of New Zealand is **Wellington**.",
+      "score": 1.0
+    },
+    {
+      "id": 50,
+      "type": "author",
+      "prompt": "Who wrote 'hamlet'?",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "*Hamlet* was written by **William Shakespeare**. It is one of his most famous tragedies and was likely composed between 1599 and 1601.",
+      "score": 1.0
+    },
+    {
+      "id": 51,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in brief)**  \n\n- **Statement**: The acceleration \\( \\mathbf{a} \\) of an object is directly proportional to the net external force \\( \\mathbf{F}_{\\text{net}} \\) acting on it, and inversely proportional to its mass \\( m \\).  \n\n- **Mathematical form**:  \n\\",
+      "score": 0.0
+    },
+    {
+      "id": 52,
+      "type": "math",
+      "prompt": "What is 652 minus 173?",
+      "expected": "479",
+      "response": "652 − 173 = **479**.",
+      "score": 1.0
+    },
+    {
+      "id": 53,
+      "type": "capital",
+      "prompt": "Name the capital city of portugal.",
+      "expected": "lisbon",
+      "response": "The capital city of Portugal is **Lisbon**.",
+      "score": 1.0
+    },
+    {
+      "id": 54,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The author traditionally credited with writing **“The Odyssey”** is the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 55,
+      "type": "science",
+      "prompt": "How do plants convert light to energy?",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "**Plants turn sunlight into chemical energy through a process called *photosynthesis*.**  \nIt occurs in the chloroplasts of leaf cells and can be broken down into two linked",
+      "score": 0.0
+    },
+    {
+      "id": 56,
+      "type": "math",
+      "prompt": "Subtract 576 from 891.",
+      "expected": "315",
+      "response": "891 − 576 = 315.",
+      "score": 1.0
+    },
+    {
+      "id": 57,
+      "type": "capital",
+      "prompt": "Scotland's capital is?",
+      "expected": "edinburgh",
+      "response": "Scotland’s capital is **Edinburgh**.",
+      "score": 1.0
+    },
+    {
+      "id": 58,
+      "type": "author",
+      "prompt": "Name the author of the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The *Iliad* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 59,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 60,
+      "type": "math",
+      "prompt": "What is 124 plus 310?",
+      "expected": "434",
+      "response": "124 + 310 = 434.",
+      "score": 1.0
+    },
+    {
+      "id": 61,
+      "type": "capital",
+      "prompt": "France's capital is?",
+      "expected": "paris",
+      "response": "France's capital is Paris.",
+      "score": 1.0
+    },
+    {
+      "id": 62,
+      "type": "author",
+      "prompt": "Name the author of war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The novel **_War and Peace_** was written by **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 63,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the heritable traits of a population over many generations. It works through three main processes:\n\n1. **Genetic variation** – Individuals differ because of mutations, gene shuffling (recombination), and other sources of DNA changes.\n2. **Inheritance** – Those genetic differences are passed from parents",
+      "score": 0.0
+    },
+    {
+      "id": 64,
+      "type": "math",
+      "prompt": "Add 529 and 944.",
+      "expected": "1473",
+      "response": "529 + 944 = 1473.",
+      "score": 1.0
+    },
+    {
+      "id": 65,
+      "type": "capital",
+      "prompt": "Greece's capital is?",
+      "expected": "athens",
+      "response": "The capital of Greece is **Athens**.",
+      "score": 1.0
+    },
+    {
+      "id": 66,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Iliad”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 67,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (Brief Overview)**  \n\n- **Statement**: The net force **\\( \\mathbf{F}_{\\text{net}} \\)** acting on an object is equal to the product of its mass **\\( m \\)** and its acceleration **\\( \\mathbf{a} \\)**.  \n  \\[\n  \\mathbf{F}_{\\text{net}} =",
+      "score": 0.0
+    },
+    {
+      "id": 68,
+      "type": "math",
+      "prompt": "Add 392 and 790.",
+      "expected": "1182",
+      "response": "392 + 790 = 1182.",
+      "score": 1.0
+    },
+    {
+      "id": 69,
+      "type": "capital",
+      "prompt": "France's capital is?",
+      "expected": "paris",
+      "response": "France's capital is **Paris**.",
+      "score": 1.0
+    },
+    {
+      "id": 70,
+      "type": "author",
+      "prompt": "Name the author of 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **“1984”** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 71,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion (in brief)**  \n\n- **Statement:** The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.  \n\n- **Mathematical form:**  \n\\[\n\\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n\\]  \nwhere  \n  - \\(\\mathbf{F}_{\\text{net}}\\) = vector sum of all external forces on the object (new",
+      "score": 0.0
+    },
+    {
+      "id": 72,
+      "type": "math",
+      "prompt": "What is 961 minus 381?",
+      "expected": "580",
+      "response": "961 − 381 = 580.",
+      "score": 1.0
+    },
+    {
+      "id": 73,
+      "type": "capital",
+      "prompt": "What is the capital of poland?",
+      "expected": "warsaw",
+      "response": "The capital of Poland is **Warsaw**.",
+      "score": 1.0
+    },
+    {
+      "id": 74,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 75,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion (briefly):**\n\nThe law states that the acceleration \\(a\\) of an object is directly proportional to the net external force \\(F\\) acting on it and inversely proportional to its mass \\(m\\). In equation form:\n\n\\[\n\\boxed{ \\mathbf{F}_{\\text{net}}",
+      "score": 0.0
+    },
+    {
+      "id": 76,
+      "type": "math",
+      "prompt": "Subtract 507 from 759.",
+      "expected": "252",
+      "response": "759 − 507 = 252.",
+      "score": 1.0
+    },
+    {
+      "id": 77,
+      "type": "capital",
+      "prompt": "What is the capital of ireland?",
+      "expected": "dublin",
+      "response": "The capital of Ireland is **Dublin**.",
+      "score": 1.0
+    },
+    {
+      "id": 78,
+      "type": "author",
+      "prompt": "Name the author of war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The author of **War and Peace** is **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 79,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the process by which populations of organisms change over generations. It works through three key mechanisms:\n\n1. **Variation** – Individuals differ in their traits (e.g., size, color, behavior) because of genetic mutations, recombination, and other sources of genetic diversity.\n\n2. **Inheritance** – Most of these traits are passed from parents to offspring through DNA.\n\n3. **Differential survival and reproduction** – In a given environment, some trait combinations give",
+      "score": 0.0
+    },
+    {
+      "id": 80,
+      "type": "math",
+      "prompt": "What is 550 minus 281?",
+      "expected": "269",
+      "response": "550 − 281 = 269.",
+      "score": 1.0
+    },
+    {
+      "id": 81,
+      "type": "capital",
+      "prompt": "Denmark's capital is?",
+      "expected": "copenhagen",
+      "response": "Denmark's capital is **Copenhagen**.",
+      "score": 1.0
+    },
+    {
+      "id": 82,
+      "type": "author",
+      "prompt": "Identify the writer of the work: war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The writer of **“War and Peace”** is **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 83,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law – the link between force, mass, and acceleration**\n\n- **Formula:** **\\( \\mathbf{F} = m \\mathbf{a} \\)**\n  - **\\( \\mathbf{F} \\)** = net external force acting on an object (vector, measured in newtons, N)\n  - **\\( m \\",
+      "score": 0.0
+    },
+    {
+      "id": 84,
+      "type": "math",
+      "prompt": "What is 697 minus 418?",
+      "expected": "279",
+      "response": "697 − 418 = 279.",
+      "score": 1.0
+    },
+    {
+      "id": 85,
+      "type": "capital",
+      "prompt": "Name the capital city of south africa.",
+      "expected": "pretoria",
+      "response": "South Africa has **three** capital cities, each serving a different branch of government:\n\n| Role | Capital City |\n|------|--------------|\n| **Administrative (executive)** | **Pretoria** |\n| **Legislative** | **Cape Town** |\n| **Judicial** | **Bloemfontein** |\n\nSo, depending",
+      "score": 1.0
+    },
+    {
+      "id": 86,
+      "type": "author",
+      "prompt": "Who wrote 'hamlet'?",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "*Hamlet* was written by **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 87,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\nNewton’s second law states that the acceleration \\(a\\) of an object is directly proportional to the net external force \\(F_{\\text{net}}\\) acting on it and inversely proportional to its mass \\(m\\). In equation form:\n\n\\[\n\\boxed{ \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a} }\n\\]\n\n- **Force (\\(\\mathbf{F}_{\\text",
+      "score": 0.0
+    },
+    {
+      "id": 88,
+      "type": "math",
+      "prompt": "Compute 356 - 31.",
+      "expected": "325",
+      "response": "356 − 31 = **325**.",
+      "score": 1.0
+    },
+    {
+      "id": 89,
+      "type": "capital",
+      "prompt": "What is the capital of finland?",
+      "expected": "helsinki",
+      "response": "The capital of Finland is **Helsinki**.",
+      "score": 1.0
+    },
+    {
+      "id": 90,
+      "type": "author",
+      "prompt": "Identify the writer of the work: hamlet.",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "The writer of *Hamlet* is **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 91,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through three main processes:\n\n1. **Variation** – Individuals differ in traits because of mutations, recombination, and other sources of genetic diversity.  \n2. **Inheritance** – Many of these traits are passed from parents to offspring via DNA.",
+      "score": 0.0
+    },
+    {
+      "id": 92,
+      "type": "math",
+      "prompt": "What is 244 minus 79?",
+      "expected": "165",
+      "response": "244 − 79 = 165.",
+      "score": 1.0
+    },
+    {
+      "id": 93,
+      "type": "capital",
+      "prompt": "Portugal's capital is?",
+      "expected": "lisbon",
+      "response": "Portugal’s capital is **Lisbon**.",
+      "score": 1.0
+    },
+    {
+      "id": 94,
+      "type": "author",
+      "prompt": "Name the author of pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The author of **_Pride and Prejudice_** is **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 95,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the evolutionary process where individuals with advantageous traits survive and reproduce more successfully, causing those traits to become more common in a population over generations.",
+      "score": 0.0
+    },
+    {
+      "id": 96,
+      "type": "math",
+      "prompt": "Add 229 and 562.",
+      "expected": "791",
+      "response": "229 + 562 = 791.",
+      "score": 1.0
+    },
+    {
+      "id": 97,
+      "type": "capital",
+      "prompt": "What is the capital of india?",
+      "expected": "new delhi",
+      "response": "The capital of India is **New Delhi**.",
+      "score": 1.0
+    },
+    {
+      "id": 98,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The *Odyssey* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 99,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in a nutshell)**  \n\n- **Statement**: The net force **\\( \\mathbf{F}_{\\text{net}} \\)** acting on an object is equal to the product of its mass **\\( m \\)** and its acceleration **\\( \\mathbf{a} \\)**.  \n  \\[\n  \\mathbf{F}_{\\text{",
+      "score": 0.0
+    },
+    {
+      "id": 100,
+      "type": "math",
+      "prompt": "What is 109 plus 684?",
+      "expected": "793",
+      "response": "109 + 684 = 793.",
+      "score": 1.0
+    },
+    {
+      "id": 101,
+      "type": "capital",
+      "prompt": "Name the capital city of brazil.",
+      "expected": "brasilia",
+      "response": "The capital city of Brazil is **Brasília**.",
+      "score": 0.0
+    },
+    {
+      "id": 102,
+      "type": "author",
+      "prompt": "Who wrote 'war and peace'?",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "**Leo Tolstoy** wrote *War and Peace*. It was first published in serial form from 1865 to 1869 and is considered one of the greatest novels ever written.",
+      "score": 1.0
+    },
+    {
+      "id": 103,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over generations. It works through four main processes:\n\n1. **Variation** – Individuals differ in traits because of mutations, recombination, and other sources of genetic change.  \n2. **Inheritance** – Many of these traits are passed from parents to offspring via DNA.  \n3. **Differential survival & reproduction** – In a given environment, some trait combinations give individuals",
+      "score": 0.0
+    },
+    {
+      "id": 104,
+      "type": "math",
+      "prompt": "Compute 422 - 72.",
+      "expected": "350",
+      "response": "422 − 72 = 350.",
+      "score": 1.0
+    },
+    {
+      "id": 105,
+      "type": "capital",
+      "prompt": "What is the capital of poland?",
+      "expected": "warsaw",
+      "response": "The capital of Poland is **Warsaw**.",
+      "score": 1.0
+    },
+    {
+      "id": 106,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 107,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) taken up by their roots. The light‑driven reactions split water, releasing oxygen (O₂) as a by‑product, while the energy captured drives the Calvin cycle, which fixes CO₂ into glucose (C₆H₁₂O₆). In short, photosynthesis",
+      "score": 0.0
+    },
+    {
+      "id": 108,
+      "type": "math",
+      "prompt": "Compute 442 + 197.",
+      "expected": "639",
+      "response": "442 + 197 = 639.",
+      "score": 1.0
+    },
+    {
+      "id": 109,
+      "type": "capital",
+      "prompt": "Name the capital city of portugal.",
+      "expected": "lisbon",
+      "response": "The capital city of Portugal is **Lisbon**.",
+      "score": 1.0
+    },
+    {
+      "id": 110,
+      "type": "author",
+      "prompt": "Who wrote 'the iliad'?",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **_The Iliad_** is traditionally attributed to the ancient Greek poet **Homer**. While some scholars debate the historicity of Homer and the exact origins of the poem, the name “Homer” has been the standard attribution since antiquity.",
+      "score": 1.0
+    },
+    {
+      "id": 111,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (briefly)**  \n\n- **Statement**: The net force acting on an object is equal to the rate of change of its momentum.  \n- **Mathematical form**:  \n  \\[\n  \\mathbf{F}_{\\text{net}} = \\frac{d\\mathbf{p}}{dt}\n  \\]\n  where",
+      "score": 0.0
+    },
+    {
+      "id": 112,
+      "type": "math",
+      "prompt": "Compute 958 - 105.",
+      "expected": "853",
+      "response": "958 − 105 = **853**.",
+      "score": 1.0
+    },
+    {
+      "id": 113,
+      "type": "capital",
+      "prompt": "Name the capital city of belgium.",
+      "expected": "brussels",
+      "response": "The capital city of Belgium is **Brussels**.",
+      "score": 1.0
+    },
+    {
+      "id": 114,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The *Odyssey* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 115,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (the force–mass–acceleration relationship)**  \n\n- **Formula:** \\(\\displaystyle \\mathbf{F}=m\\,\\mathbf{a}\\)  \n  - \\(\\mathbf{F}\\) = net force acting on an object (vector, measured",
+      "score": 0.0
+    },
+    {
+      "id": 116,
+      "type": "math",
+      "prompt": "Compute 934 + 70.",
+      "expected": "1004",
+      "response": "934 + 70 = **1004**.",
+      "score": 1.0
+    },
+    {
+      "id": 117,
+      "type": "capital",
+      "prompt": "Name the capital city of united states.",
+      "expected": "washington",
+      "response": "The capital city of the United States is **Washington, D.C.**.",
+      "score": 1.0
+    },
+    {
+      "id": 118,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The *Odyssey* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 119,
+      "type": "science",
+      "prompt": "How do plants convert light to energy?",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Plants turn sunlight into usable chemical energy through a process called **photosynthesis**.  \nBelow is a step‑by‑step overview of how it works, the key players involved, and why the result is so important for virtually all life on Earth.\n\n---\n\n## 1. The Big Picture\n\n**Overall reaction (simplified)**  \n\n\\[\n6 \\text{CO}_2 + 6",
+      "score": 0.0
+    },
+    {
+      "id": 120,
+      "type": "math",
+      "prompt": "Compute 168 + 204.",
+      "expected": "372",
+      "response": "168 + 204 = 372.",
+      "score": 1.0
+    },
+    {
+      "id": 121,
+      "type": "capital",
+      "prompt": "Spain's capital is?",
+      "expected": "madrid",
+      "response": "Spain’s capital is **Madrid**.",
+      "score": 1.0
+    },
+    {
+      "id": 122,
+      "type": "author",
+      "prompt": "Who wrote '1984'?",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "George Orwell wrote the novel **“1984.”**",
+      "score": 1.0
+    },
+    {
+      "id": 123,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "Newton’s second law states that the net force **F** acting on an object is equal to the product of its mass **m** and its acceleration **a**:\n\n\\[\n\\mathbf{F} = m\\,\\mathbf{a}\n\\]\n\n- **Force (F)**: a vector quantity that describes the push or pull on an object.\n- **Mass (m)**: a scalar that measures the",
+      "score": 0.0
+    },
+    {
+      "id": 124,
+      "type": "math",
+      "prompt": "Compute 951 - 524.",
+      "expected": "427",
+      "response": "951 − 524 = **427**.",
+      "score": 1.0
+    },
+    {
+      "id": 125,
+      "type": "capital",
+      "prompt": "Spain's capital is?",
+      "expected": "madrid",
+      "response": "Spain's capital is **Madrid**.",
+      "score": 1.0
+    },
+    {
+      "id": 126,
+      "type": "author",
+      "prompt": "Who wrote 'hamlet'?",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "*Hamlet* was written by **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 127,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in a nutshell)**  \n\nThe law states that the acceleration \\(a\\) of an object is directly proportional to the net force \\(F_{\\text{net}}\\) acting on it and inversely proportional to its mass \\(m\\). In equation form:\n\n\\[\n\\boxed{F_{\\text{net}} = m\\,a}\n\\]\n\n- **Force (\\(F_{\\text{net}}\\))**",
+      "score": 0.0
+    },
+    {
+      "id": 128,
+      "type": "math",
+      "prompt": "Compute 701 + 892.",
+      "expected": "1593",
+      "response": "701 + 892 = **1,593**.",
+      "score": 0.0
+    },
+    {
+      "id": 129,
+      "type": "capital",
+      "prompt": "Poland's capital is?",
+      "expected": "warsaw",
+      "response": "Poland’s capital is **Warsaw**.",
+      "score": 1.0
+    },
+    {
+      "id": 130,
+      "type": "author",
+      "prompt": "Who wrote 'the iliad'?",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **_The Iliad_** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 131,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through three main mechanisms:\n\n1. **Variation** – Individuals differ in their traits because of random genetic mutations, recombination during sexual reproduction, and other sources of genetic diversity.  \n2. **Heritability** – Many of these trait differences are passed from parents to offspring via DNA.  \n3. **Differential reproductive success** – In a given environment",
+      "score": 0.0
+    },
+    {
+      "id": 132,
+      "type": "math",
+      "prompt": "Subtract 439 from 683.",
+      "expected": "244",
+      "response": "683 − 439 = 244.",
+      "score": 1.0
+    },
+    {
+      "id": 133,
+      "type": "capital",
+      "prompt": "Name the capital city of russia.",
+      "expected": "moscow",
+      "response": "The capital city of Russia is **Moscow**.",
+      "score": 1.0
+    },
+    {
+      "id": 134,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 135,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits better suited to their environment tend to survive and reproduce more successfully, passing those advantageous traits to future generations.",
+      "score": 0.0
+    },
+    {
+      "id": 136,
+      "type": "math",
+      "prompt": "Add 254 and 281.",
+      "expected": "535",
+      "response": "254 + 281 = 535.",
+      "score": 1.0
+    },
+    {
+      "id": 137,
+      "type": "capital",
+      "prompt": "Name the capital city of greece.",
+      "expected": "athens",
+      "response": "The capital city of Greece is **Athens**.",
+      "score": 1.0
+    },
+    {
+      "id": 138,
+      "type": "author",
+      "prompt": "Who wrote '1984'?",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **“1984”** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 139,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "Newton’s second law of motion describes the direct relationship among force, mass, and acceleration:\n\n**Formula:** \\( \\displaystyle \\mathbf{F} = m \\mathbf{a} \\)\n\n- **Force ( F )** – a vector quantity that represents any interaction that can cause a change in an object’s motion. It is measured in newtons (N).\n- **",
+      "score": 0.0
+    },
+    {
+      "id": 140,
+      "type": "math",
+      "prompt": "Compute 646 - 586.",
+      "expected": "60",
+      "response": "646 − 586 = **60**.",
+      "score": 1.0
+    },
+    {
+      "id": 141,
+      "type": "capital",
+      "prompt": "Denmark's capital is?",
+      "expected": "copenhagen",
+      "response": "Denmark's capital is **Copenhagen**.",
+      "score": 1.0
+    },
+    {
+      "id": 142,
+      "type": "author",
+      "prompt": "Who wrote '1984'?",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **“1984”** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 143,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll in chloroplasts, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) to produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a by‑product. The overall simplified equation is:\n\n**6 CO₂ + 6 H₂O +",
+      "score": 0.0
+    },
+    {
+      "id": 144,
+      "type": "math",
+      "prompt": "Compute 910 + 260.",
+      "expected": "1170",
+      "response": "910 + 260 = 1170.",
+      "score": 1.0
+    },
+    {
+      "id": 145,
+      "type": "capital",
+      "prompt": "Japan's capital is?",
+      "expected": "tokyo",
+      "response": "Japan's capital is **Tokyo**.",
+      "score": 1.0
+    },
+    {
+      "id": 146,
+      "type": "author",
+      "prompt": "Name the author of war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The author of *War and Peace* is **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 147,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through three main mechanisms:\n\n1. **Variation** – Individuals differ in their traits because of mutations, gene shuffling (recombination), and other sources of genetic diversity.  \n2. **Differential reproduction (natural selection)** – Some traits give individuals a higher chance of surviving and reproducing in a particular environment. Those individuals pass on the advantageous genes more often.",
+      "score": 0.0
+    },
+    {
+      "id": 148,
+      "type": "math",
+      "prompt": "Subtract 693 from 846.",
+      "expected": "153",
+      "response": "846 − 693 = 153.",
+      "score": 1.0
+    },
+    {
+      "id": 149,
+      "type": "capital",
+      "prompt": "What is the capital of england?",
+      "expected": "london",
+      "response": "The capital of England is **London**.",
+      "score": 1.0
+    },
+    {
+      "id": 150,
+      "type": "author",
+      "prompt": "Who wrote '1984'?",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "George Orwell wrote the novel *1984*.",
+      "score": 1.0
+    },
+    {
+      "id": 151,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion (in brief)**  \n\n- **Statement:** The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.  \n\n- **Mathematical form:**  \n\\[\n\\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n\\]  \nwhere  \n  - \\(\\mathbf{F}_{\\text{net}}\\) = vector sum of all external forces (newtons,",
+      "score": 0.0
+    },
+    {
+      "id": 152,
+      "type": "math",
+      "prompt": "Subtract 288 from 298.",
+      "expected": "10",
+      "response": "298 − 288 = 10.",
+      "score": 1.0
+    },
+    {
+      "id": 153,
+      "type": "capital",
+      "prompt": "What is the capital of turkey?",
+      "expected": "ankara",
+      "response": "The capital of Turkey is **Ankara**.",
+      "score": 1.0
+    },
+    {
+      "id": 154,
+      "type": "author",
+      "prompt": "Identify the writer of the work: war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The novel **“War and Peace”** was written by the Russian author **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 155,
+      "type": "science",
+      "prompt": "How do plants convert light to energy?",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "**Plants turn sunlight into chemical energy through a process called *photosynthesis*.**  \nIt can be broken down into two main stages that happen in the chloroplasts of plant cells:",
+      "score": 0.0
+    },
+    {
+      "id": 156,
+      "type": "math",
+      "prompt": "Compute 937 - 267.",
+      "expected": "670",
+      "response": "937 − 267 = 670.",
+      "score": 1.0
+    },
+    {
+      "id": 157,
+      "type": "capital",
+      "prompt": "Uk's capital is?",
+      "expected": "london",
+      "response": "The capital of the United Kingdom is **London**.",
+      "score": 1.0
+    },
+    {
+      "id": 158,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The **Odyssey** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 159,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\n- **Statement**: The net force acting on an object is equal to the rate of change of its momentum. In most everyday situations where the mass \\(m\\) is constant, this simplifies to  \n\n\\[\n\\boxed{ \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a} }\n\\]\n\n- **Key points**  \n  1. **Force (\\(\\mathbf{F}_{\\text{net}}\\))",
+      "score": 0.0
+    },
+    {
+      "id": 160,
+      "type": "math",
+      "prompt": "What is 351 plus 799?",
+      "expected": "1150",
+      "response": "351 + 799 = 1150.",
+      "score": 1.0
+    },
+    {
+      "id": 161,
+      "type": "capital",
+      "prompt": "Belgium's capital is?",
+      "expected": "brussels",
+      "response": "The capital of Belgium is **Brussels**.",
+      "score": 1.0
+    },
+    {
+      "id": 162,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Odyssey”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 163,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 164,
+      "type": "math",
+      "prompt": "Add 584 and 19.",
+      "expected": "603",
+      "response": "584 + 19 = 603.",
+      "score": 1.0
+    },
+    {
+      "id": 165,
+      "type": "capital",
+      "prompt": "Netherlands's capital is?",
+      "expected": "amsterdam",
+      "response": "The constitutional capital of the Netherlands is **Amsterdam**. (The Dutch government’s main institutions, such as the parliament and the prime minister’s office, are located in The Hague.)",
+      "score": 1.0
+    },
+    {
+      "id": 166,
+      "type": "author",
+      "prompt": "Name the author of hamlet.",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "The author of *Hamlet* is **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 167,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through four main mechanisms:\n\n1. **Variation** – Individuals differ genetically because of mutations, gene shuffling (recombination), and other sources of DNA change.  \n2. **Inheritance** – Those genetic differences can be passed from parents to offspring.  \n3. **Differential survival & reproduction** – In a given environment, some variants",
+      "score": 0.0
+    },
+    {
+      "id": 168,
+      "type": "math",
+      "prompt": "What is 450 plus 140?",
+      "expected": "590",
+      "response": "450 + 140 = **590**.",
+      "score": 1.0
+    },
+    {
+      "id": 169,
+      "type": "capital",
+      "prompt": "Name the capital city of italy.",
+      "expected": "rome",
+      "response": "The capital city of Italy is **Rome**.",
+      "score": 1.0
+    },
+    {
+      "id": 170,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The writer of *Pride and Prejudice* is **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 171,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in a nutshell)**  \n\n- **Statement:** The net force acting on an object is equal to the product of its mass and its acceleration.  \n- **Formula:** \\[ \\mathbf{F}_{\\text{net}} = m \\,\\mathbf{a} \\]  \n  - **",
+      "score": 0.0
+    },
+    {
+      "id": 172,
+      "type": "math",
+      "prompt": "What is 808 minus 372?",
+      "expected": "436",
+      "response": "808 − 372 = 436.",
+      "score": 1.0
+    },
+    {
+      "id": 173,
+      "type": "capital",
+      "prompt": "What is the capital of netherlands?",
+      "expected": "amsterdam",
+      "response": "The constitutional capital of the Netherlands is **Amsterdam**. However, the Dutch government (the parliament, the Supreme Court, and the official residence of the king) is based in **The Hague**. So while Amsterdam is the official capital, most of the day‑to‑day political functions take place in The Hague.",
+      "score": 1.0
+    },
+    {
+      "id": 174,
+      "type": "author",
+      "prompt": "Who wrote 'pride and prejudice'?",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "Jane Austen wrote *Pride and Prejudice*.",
+      "score": 1.0
+    },
+    {
+      "id": 175,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll in chloroplasts, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) taken up by roots. The light‑driven reactions split water, releasing oxygen (O₂) as a by‑product, and generate energy‑rich molecules (ATP and NADPH). In the Calvin‑Benson cycle, the energy from ATP and",
+      "score": 0.0
+    },
+    {
+      "id": 176,
+      "type": "math",
+      "prompt": "What is 764 minus 193?",
+      "expected": "571",
+      "response": "764 − 193 = 571.",
+      "score": 1.0
+    },
+    {
+      "id": 177,
+      "type": "capital",
+      "prompt": "Name the capital city of poland.",
+      "expected": "warsaw",
+      "response": "The capital city of Poland is **Warsaw**.",
+      "score": 1.0
+    },
+    {
+      "id": 178,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 179,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (F = ma)**  \n\n- **Force (F)** is the influence that changes an object’s motion.  \n- **Mass (m)** measures an object’s inertia—how much it resists changes in motion.  \n- **Acceleration (a)** is the rate at which the object’s velocity changes.\n\nThe law states:\n\n\\[\n\\boxed{F =",
+      "score": 0.0
+    },
+    {
+      "id": 180,
+      "type": "math",
+      "prompt": "Compute 903 - 49.",
+      "expected": "854",
+      "response": "903 − 49 = 854.",
+      "score": 1.0
+    },
+    {
+      "id": 181,
+      "type": "capital",
+      "prompt": "Name the capital city of norway.",
+      "expected": "oslo",
+      "response": "The capital city of Norway is **Oslo**.",
+      "score": 1.0
+    },
+    {
+      "id": 182,
+      "type": "author",
+      "prompt": "Name the author of 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **_1984_** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 183,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\n- **Statement**: The net force acting on an object is equal to the product of its mass and its acceleration.  \n  \\[\n  \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n  \\]\n\n- **Key Points**  \n  1. **Force ( \\(\\mathbf{F}\\) )** – A vector quantity that can cause a change in motion. It’s measured in newtons",
+      "score": 0.0
+    },
+    {
+      "id": 184,
+      "type": "math",
+      "prompt": "What is 34 plus 685?",
+      "expected": "719",
+      "response": "34 + 685 = 719.",
+      "score": 1.0
+    },
+    {
+      "id": 185,
+      "type": "capital",
+      "prompt": "What is the capital of austria?",
+      "expected": "vienna",
+      "response": "The capital of Austria is **Vienna**.",
+      "score": 1.0
+    },
+    {
+      "id": 186,
+      "type": "author",
+      "prompt": "Name the author of 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel *1984* was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 187,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which individuals with traits that confer a reproductive advantage in a given environment survive and reproduce more successfully, causing those advantageous traits to become more common in subsequent generations.",
+      "score": 0.0
+    },
+    {
+      "id": 188,
+      "type": "math",
+      "prompt": "Compute 873 - 705.",
+      "expected": "168",
+      "response": "873 − 705 = 168.",
+      "score": 1.0
+    },
+    {
+      "id": 189,
+      "type": "capital",
+      "prompt": "Name the capital city of scotland.",
+      "expected": "edinburgh",
+      "response": "The capital city of Scotland is **Edinburgh**.",
+      "score": 1.0
+    },
+    {
+      "id": 190,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The novel **“Pride and Prejudice”** was written by **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 191,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll in chloroplasts, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) to produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a by‑product. The overall simplified equation is:\n\n**6 CO₂ + 6 H₂O + light",
+      "score": 0.0
+    },
+    {
+      "id": 192,
+      "type": "math",
+      "prompt": "Add 121 and 620.",
+      "expected": "741",
+      "response": "121 + 620 = 741.",
+      "score": 1.0
+    },
+    {
+      "id": 193,
+      "type": "capital",
+      "prompt": "Name the capital city of russia.",
+      "expected": "moscow",
+      "response": "The capital city of Russia is **Moscow**.",
+      "score": 1.0
+    },
+    {
+      "id": 194,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Iliad”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 195,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law – the link between force, mass, and acceleration**\n\n- **Formula:** **\\( \\mathbf{F} = m \\mathbf{a} \\)**\n  - **\\( \\mathbf{F} \\)** – net external force acting on an object (vector, measured in newtons, N)\n  - **\\( m \\)**",
+      "score": 0.0
+    },
+    {
+      "id": 196,
+      "type": "math",
+      "prompt": "Compute 931 + 600.",
+      "expected": "1531",
+      "response": "931 + 600 = **1,531**.",
+      "score": 0.0
+    },
+    {
+      "id": 197,
+      "type": "capital",
+      "prompt": "What is the capital of argentina?",
+      "expected": "buenos aires",
+      "response": "The capital of Argentina is **Buenos Aires**.",
+      "score": 1.0
+    },
+    {
+      "id": 198,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Iliad”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 199,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through a few key processes:\n\n1. **Variation** – Individuals in a population differ in traits because of mutations, genetic recombination, and other sources of genetic diversity.  \n2. **Inheritance** – Many of these traits are passed from parents to",
+      "score": 0.0
+    },
+    {
+      "id": 200,
+      "type": "math",
+      "prompt": "Add 382 and 451.",
+      "expected": "833",
+      "response": "382 + 451 = 833.",
+      "score": 1.0
+    },
+    {
+      "id": 201,
+      "type": "capital",
+      "prompt": "Turkey's capital is?",
+      "expected": "ankara",
+      "response": "Turkey's capital is **Ankara**.",
+      "score": 1.0
+    },
+    {
+      "id": 202,
+      "type": "author",
+      "prompt": "Identify the writer of the work: 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The writer of **“1984”** is **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 203,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law – the link between force, mass, and acceleration**\n\n- **Formula:** **\\( \\mathbf{F} = m \\mathbf{a} \\)**\n  - **\\( \\mathbf{F} \\)** = net force acting on an object (newtons, N)",
+      "score": 0.0
+    },
+    {
+      "id": 204,
+      "type": "math",
+      "prompt": "What is 529 minus 326?",
+      "expected": "203",
+      "response": "529 − 326 = 203.",
+      "score": 1.0
+    },
+    {
+      "id": 205,
+      "type": "capital",
+      "prompt": "Mexico's capital is?",
+      "expected": "mexico city",
+      "response": "Mexico's capital is **Mexico City**.",
+      "score": 1.0
+    },
+    {
+      "id": 206,
+      "type": "author",
+      "prompt": "Identify the writer of the work: 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The writer of the novel **“1984”** is **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 207,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (Brief Overview)**  \n\n- **Statement:** The net force acting on an object is equal to the product of its mass and the acceleration it acquires.  \n  \\[\n  \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n  \\]\n\n- **Key Points**\n  1. **Vector Quantities:** Both force (**F",
+      "score": 0.0
+    },
+    {
+      "id": 208,
+      "type": "math",
+      "prompt": "Subtract 440 from 690.",
+      "expected": "250",
+      "response": "690 − 440 = 250.",
+      "score": 1.0
+    },
+    {
+      "id": 209,
+      "type": "capital",
+      "prompt": "Sweden's capital is?",
+      "expected": "stockholm",
+      "response": "Sweden's capital is **Stockholm**.",
+      "score": 1.0
+    },
+    {
+      "id": 210,
+      "type": "author",
+      "prompt": "Name the author of the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **the *Iliad*** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 211,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) to produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a by‑product. The overall reaction can be summarized as:\n\n**6 CO₂ + 6 H₂O + light energy → C₆H",
+      "score": 0.0
+    },
+    {
+      "id": 212,
+      "type": "math",
+      "prompt": "Add 321 and 303.",
+      "expected": "624",
+      "response": "321 + 303 = 624.",
+      "score": 1.0
+    },
+    {
+      "id": 213,
+      "type": "capital",
+      "prompt": "Name the capital city of russia.",
+      "expected": "moscow",
+      "response": "The capital city of Russia is **Moscow**.",
+      "score": 1.0
+    },
+    {
+      "id": 214,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The author of *The Odyssey* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 215,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through four main mechanisms:\n\n1. **Mutation** – Random changes in DNA create new genetic variants.\n2. **Genetic recombination** – During sexual reproduction, genes are shuffled, producing new combinations.\n3. **Natural selection** – Individuals with traits that better suit their environment survive and reproduce more, passing those advantageous genes to the next",
+      "score": 0.0
+    },
+    {
+      "id": 216,
+      "type": "math",
+      "prompt": "Subtract 494 from 533.",
+      "expected": "39",
+      "response": "533 − 494 = **39**.",
+      "score": 1.0
+    },
+    {
+      "id": 217,
+      "type": "capital",
+      "prompt": "Belgium's capital is?",
+      "expected": "brussels",
+      "response": "The capital of Belgium is **Brussels**.",
+      "score": 1.0
+    },
+    {
+      "id": 218,
+      "type": "author",
+      "prompt": "Name the author of hamlet.",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "The author of *Hamlet* is **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 219,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 220,
+      "type": "math",
+      "prompt": "Compute 848 - 105.",
+      "expected": "743",
+      "response": "848 − 105 = 743.",
+      "score": 1.0
+    },
+    {
+      "id": 221,
+      "type": "capital",
+      "prompt": "What is the capital of greece?",
+      "expected": "athens",
+      "response": "The capital of Greece is **Athens**.",
+      "score": 1.0
+    },
+    {
+      "id": 222,
+      "type": "author",
+      "prompt": "Who wrote 'pride and prejudice'?",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "\"Pride and Prejudice\" was written by **Jane Austen**. It was first published in 1813 and has since become one of the most celebrated novels in English literature.",
+      "score": 1.0
+    },
+    {
+      "id": 223,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in brief)**  \n\n- **Statement:** The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.  \n\n- **Mathematical form:**  \n\\[\n\\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n\\]  \nwhere  \n- \\(\\mathbf{F}_{\\text{net}}\\) = vector sum of all external forces on the object (newtons",
+      "score": 0.0
+    },
+    {
+      "id": 224,
+      "type": "math",
+      "prompt": "Compute 496 - 260.",
+      "expected": "236",
+      "response": "496 − 260 = 236.",
+      "score": 1.0
+    },
+    {
+      "id": 225,
+      "type": "capital",
+      "prompt": "Name the capital city of china.",
+      "expected": "beijing",
+      "response": "The capital city of China is **Beijing**.",
+      "score": 1.0
+    },
+    {
+      "id": 226,
+      "type": "author",
+      "prompt": "Identify the writer of the work: war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The novel **“War and Peace”** was written by **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 227,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (F = ma)**  \n\n- **Force (F)** is the influence that changes an object’s motion.  \n- **Mass (m)** measures an object’s resistance to changes in motion (its inertia).  \n- **Acceleration (a)** is the rate at which the object’s velocity changes.\n\nThe law states:\n\n\\[",
+      "score": 0.0
+    },
+    {
+      "id": 228,
+      "type": "math",
+      "prompt": "Add 516 and 419.",
+      "expected": "935",
+      "response": "516 + 419 = 935.",
+      "score": 1.0
+    },
+    {
+      "id": 229,
+      "type": "capital",
+      "prompt": "What is the capital of france?",
+      "expected": "paris",
+      "response": "The capital of France is **Paris**.",
+      "score": 1.0
+    },
+    {
+      "id": 230,
+      "type": "author",
+      "prompt": "Who wrote 'the odyssey'?",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Odyssey”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 231,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "Newton’s second law of motion quantifies how a body’s motion changes when a force is applied:\n\n\\[\n\\mathbf{F}=m\\,\\mathbf{a}\n\\]\n\n- **Force ( \\(\\mathbf{F}\\) )** – a vector quantity that represents any interaction that can cause a change in motion. It is measured in newtons (N), where 1 N = 1",
+      "score": 0.0
+    },
+    {
+      "id": 232,
+      "type": "math",
+      "prompt": "Compute 61 + 580.",
+      "expected": "641",
+      "response": "61 + 580 = 641.",
+      "score": 1.0
+    },
+    {
+      "id": 233,
+      "type": "capital",
+      "prompt": "What is the capital of china?",
+      "expected": "beijing",
+      "response": "The capital of China is **Beijing**.",
+      "score": 1.0
+    },
+    {
+      "id": 234,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The ancient Greek poet **Homer** is traditionally credited as the author of *The Odyssey*.",
+      "score": 1.0
+    },
+    {
+      "id": 235,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the evolutionary process where individuals with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 236,
+      "type": "math",
+      "prompt": "Subtract 783 from 982.",
+      "expected": "199",
+      "response": "982 − 783 = 199.",
+      "score": 1.0
+    },
+    {
+      "id": 237,
+      "type": "capital",
+      "prompt": "Name the capital city of new zealand.",
+      "expected": "wellington",
+      "response": "The capital city of New Zealand is **Wellington**.",
+      "score": 1.0
+    },
+    {
+      "id": 238,
+      "type": "author",
+      "prompt": "Name the author of the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The *Iliad* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 239,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "Newton’s second law of motion states that the net force (**F**) acting on an object is directly proportional to the product of its mass (**m**) and its acceleration (**a**):\n\n\\[\n\\boxed{F = m \\, a}\n\\]\n\n- **Force (F)** – A vector quantity that represents a push or pull on an object; measured in newtons",
+      "score": 0.0
+    },
+    {
+      "id": 240,
+      "type": "math",
+      "prompt": "Subtract 275 from 470.",
+      "expected": "195",
+      "response": "470 − 275 = 195.",
+      "score": 1.0
+    },
+    {
+      "id": 241,
+      "type": "capital",
+      "prompt": "Austria's capital is?",
+      "expected": "vienna",
+      "response": "Austria’s capital is **Vienna**.",
+      "score": 1.0
+    },
+    {
+      "id": 242,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The author of *The Odyssey* is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 243,
+      "type": "science",
+      "prompt": "Summarize the relation between force, mass, and acceleration.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\n- **Formula:** **F = m · a**\n  - **F** = net force applied to an object (measured in newtons, N)\n  - **m** = mass of the object (kilograms, kg)\n  - **a** = resulting acceleration (meters per second squared, m/s",
+      "score": 0.0
+    },
+    {
+      "id": 244,
+      "type": "math",
+      "prompt": "Compute 460 - 89.",
+      "expected": "371",
+      "response": "460 − 89 = 371.",
+      "score": 1.0
+    },
+    {
+      "id": 245,
+      "type": "capital",
+      "prompt": "Name the capital city of austria.",
+      "expected": "vienna",
+      "response": "The capital city of Austria is **Vienna**.",
+      "score": 1.0
+    },
+    {
+      "id": 246,
+      "type": "author",
+      "prompt": "Identify the writer of the work: 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The writer of the novel **“1984”** is **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 247,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law (in a nutshell)**  \n\n- **Statement**: The net force **F** acting on an object is equal to the product of its mass **m** and its acceleration **a**.  \n  \\[\n  \\mathbf{F}_{\\text{net}} = m\\,\\mathbf{a}\n  \\]\n\n- **Key points**",
+      "score": 0.0
+    },
+    {
+      "id": 248,
+      "type": "math",
+      "prompt": "Compute 164 + 246.",
+      "expected": "410",
+      "response": "164 + 246 = 410.",
+      "score": 1.0
+    },
+    {
+      "id": 249,
+      "type": "capital",
+      "prompt": "What is the capital of denmark?",
+      "expected": "copenhagen",
+      "response": "The capital of Denmark is **Copenhagen**.",
+      "score": 1.0
+    },
+    {
+      "id": 250,
+      "type": "author",
+      "prompt": "Name the author of the odyssey.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The author of **The Odyssey** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 251,
+      "type": "science",
+      "prompt": "How do plants convert light to energy?",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "**Plants turn sunlight into chemical energy through a process called photosynthesis.**  \nAt its core, photosynthesis captures photons (light particles) and uses that energy to build sugar molecules that the plant can later burn for growth, repair, and reproduction. Below is a step‑by‑step overview of how it works",
+      "score": 0.0
+    },
+    {
+      "id": 252,
+      "type": "math",
+      "prompt": "What is 435 plus 73?",
+      "expected": "508",
+      "response": "435 + 73 = 508.",
+      "score": 1.0
+    },
+    {
+      "id": 253,
+      "type": "capital",
+      "prompt": "United States's capital is?",
+      "expected": "washington",
+      "response": "The capital of the United States is **Washington, D.C.**.",
+      "score": 1.0
+    },
+    {
+      "id": 254,
+      "type": "author",
+      "prompt": "Who wrote 'war and peace'?",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "\"War and Peace\" was written by the Russian author **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 255,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits that confer a survival or reproductive advantage are more likely to pass those traits to the next generation, gradually shaping the characteristics of a population.",
+      "score": 0.0
+    },
+    {
+      "id": 256,
+      "type": "math",
+      "prompt": "What is 498 minus 16?",
+      "expected": "482",
+      "response": "498 − 16 = **482**.",
+      "score": 1.0
+    },
+    {
+      "id": 257,
+      "type": "capital",
+      "prompt": "Name the capital city of united states.",
+      "expected": "washington",
+      "response": "The capital city of the United States is **Washington, D.C.**.",
+      "score": 1.0
+    },
+    {
+      "id": 258,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Iliad”** is traditionally attributed to the ancient Greek poet **Homer**. While the exact historical identity of Homer remains a subject of scholarly debate, the work has been passed down through the ages as his creation.",
+      "score": 1.0
+    },
+    {
+      "id": 259,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the process by which populations of organisms change over generations. It works through three main mechanisms:\n\n1. **Variation** – Individuals differ genetically (mutations, recombination, gene flow) producing a range of traits.\n2. **Inheritance** – Many of these traits are passed from parents to offspring.\n3. **Differential survival & reproduction** – In a given environment, some traits confer advantages",
+      "score": 0.0
+    },
+    {
+      "id": 260,
+      "type": "math",
+      "prompt": "What is 509 plus 234?",
+      "expected": "743",
+      "response": "509 + 234 = 743.",
+      "score": 1.0
+    },
+    {
+      "id": 261,
+      "type": "capital",
+      "prompt": "Name the capital city of germany.",
+      "expected": "berlin",
+      "response": "The capital city of Germany is **Berlin**.",
+      "score": 1.0
+    },
+    {
+      "id": 262,
+      "type": "author",
+      "prompt": "Identify the writer of the work: 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The writer of the novel **“1984”** is **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 263,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the process by which organisms with traits better suited to their environment tend to survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 264,
+      "type": "math",
+      "prompt": "Compute 751 - 179.",
+      "expected": "572",
+      "response": "751 − 179 = 572.",
+      "score": 1.0
+    },
+    {
+      "id": 265,
+      "type": "capital",
+      "prompt": "Name the capital city of germany.",
+      "expected": "berlin",
+      "response": "The capital city of Germany is **Berlin**.",
+      "score": 1.0
+    },
+    {
+      "id": 266,
+      "type": "author",
+      "prompt": "Identify the writer of the work: the iliad.",
+      "answers": [
+        "homer"
+      ],
+      "response": "The epic poem **“The Iliad”** is traditionally attributed to the ancient Greek poet **Homer**.",
+      "score": 1.0
+    },
+    {
+      "id": 267,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over generations. It works through three main processes:\n\n1. **Variation** – Mutations, recombination, and other genetic mechanisms create differences in DNA among individuals.\n2. **Inheritance** – Those genetic differences are passed from parents to offspring.\n3. **Differential survival & reproduction** – In a given environment, some variants confer advantages (or disadvantages). Individuals with advantageous traits tend to leave more offspring, spreading those genes",
+      "score": 0.0
+    },
+    {
+      "id": 268,
+      "type": "math",
+      "prompt": "What is 95 plus 668?",
+      "expected": "763",
+      "response": "95 + 668 = 763.",
+      "score": 1.0
+    },
+    {
+      "id": 269,
+      "type": "capital",
+      "prompt": "What is the capital of sweden?",
+      "expected": "stockholm",
+      "response": "The capital of Sweden is **Stockholm**.",
+      "score": 1.0
+    },
+    {
+      "id": 270,
+      "type": "author",
+      "prompt": "Name the author of 1984.",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **“1984”** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 271,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll in chloroplasts, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) to produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a by‑product. The overall simplified equation is:\n\n**6 CO₂ + 6 H₂O +",
+      "score": 0.0
+    },
+    {
+      "id": 272,
+      "type": "math",
+      "prompt": "What is 475 plus 344?",
+      "expected": "819",
+      "response": "475 + 344 = 819.",
+      "score": 1.0
+    },
+    {
+      "id": 273,
+      "type": "capital",
+      "prompt": "Name the capital city of austria.",
+      "expected": "vienna",
+      "response": "The capital city of Austria is **Vienna**.",
+      "score": 1.0
+    },
+    {
+      "id": 274,
+      "type": "author",
+      "prompt": "Who wrote '1984'?",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **“1984”** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 275,
+      "type": "science",
+      "prompt": "Briefly describe photosynthesis.",
+      "keywords": [
+        "chlorophyll",
+        "sunlight",
+        "carbon",
+        "oxygen",
+        "glucose"
+      ],
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy. Using chlorophyll in chloroplasts, they capture sunlight and combine carbon dioxide (CO₂) from the air with water (H₂O) to produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a by‑product. The overall simplified equation is:\n\n**6 CO₂ + 6 H₂O + light energy",
+      "score": 0.0
+    },
+    {
+      "id": 276,
+      "type": "math",
+      "prompt": "What is 777 plus 562?",
+      "expected": "1339",
+      "response": "777 + 562 = **1,339**.",
+      "score": 0.0
+    },
+    {
+      "id": 277,
+      "type": "capital",
+      "prompt": "Finland's capital is?",
+      "expected": "helsinki",
+      "response": "Finland's capital is **Helsinki**.",
+      "score": 1.0
+    },
+    {
+      "id": 278,
+      "type": "author",
+      "prompt": "Identify the writer of the work: hamlet.",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "The writer of *Hamlet* is **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 279,
+      "type": "science",
+      "prompt": "Explain Newton's second law in brief.",
+      "keywords": [
+        "force",
+        "mass",
+        "acceleration",
+        "f=ma",
+        "proportional"
+      ],
+      "response": "**Newton’s Second Law of Motion**\n\n- **Statement:** The net force acting on an object is equal to the rate of change of its momentum. In most everyday situations where the mass \\(m\\) of the object is constant, this simplifies to  \n\n\\[\n\\boxed{F = m\\,a}\n\\]\n\nwhere  \n- \\(F\\) = net external force (vector, measured in newtons, N)  \n- \\(m\\) = mass of",
+      "score": 0.0
+    },
+    {
+      "id": 280,
+      "type": "math",
+      "prompt": "Compute 982 + 263.",
+      "expected": "1245",
+      "response": "982 + 263 = **1,245**.",
+      "score": 0.0
+    },
+    {
+      "id": 281,
+      "type": "capital",
+      "prompt": "What is the capital of netherlands?",
+      "expected": "amsterdam",
+      "response": "The capital of the Netherlands is **Amsterdam**. (The Dutch government’s seat, however, is in The Hague.)",
+      "score": 1.0
+    },
+    {
+      "id": 282,
+      "type": "author",
+      "prompt": "Name the author of pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The author of *Pride and Prejudice* is **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 283,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over generations. It works through three key steps:\n\n1. **Variation** – Individuals differ in traits because of mutations, recombination, and other genetic changes.\n2. **Inheritance** – Those traits are passed from parents to offspring via DNA.\n3. **Differential survival and reproduction** –",
+      "score": 0.0
+    },
+    {
+      "id": 284,
+      "type": "math",
+      "prompt": "Add 587 and 980.",
+      "expected": "1567",
+      "response": "587 + 980 = **1,567**.",
+      "score": 0.0
+    },
+    {
+      "id": 285,
+      "type": "capital",
+      "prompt": "Name the capital city of czech republic.",
+      "expected": "prague",
+      "response": "The capital city of the Czech Republic is **Prague**.",
+      "score": 1.0
+    },
+    {
+      "id": 286,
+      "type": "author",
+      "prompt": "Identify the writer of the work: pride and prejudice.",
+      "answers": [
+        "jane austen",
+        "austen"
+      ],
+      "response": "The writer of **_Pride and Prejudice_** is **Jane Austen**.",
+      "score": 1.0
+    },
+    {
+      "id": 287,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of populations over successive generations. It works through four main mechanisms:\n\n1. **Variation** – Individuals differ in their traits because of mutations, genetic recombination, and other sources of genetic diversity.  \n2. **Inheritance** – Many of these traits are passed from parents to offspring through DNA.  \n3. **Differential survival & reproduction** – In a given environment, some",
+      "score": 0.0
+    },
+    {
+      "id": 288,
+      "type": "math",
+      "prompt": "What is 806 plus 848?",
+      "expected": "1654",
+      "response": "806 + 848 = **1,654**.",
+      "score": 0.0
+    },
+    {
+      "id": 289,
+      "type": "capital",
+      "prompt": "England's capital is?",
+      "expected": "london",
+      "response": "The capital of England is **London**.",
+      "score": 1.0
+    },
+    {
+      "id": 290,
+      "type": "author",
+      "prompt": "Name the author of hamlet.",
+      "answers": [
+        "william shakespeare",
+        "shakespeare"
+      ],
+      "response": "The author of *Hamlet* is **William Shakespeare**.",
+      "score": 1.0
+    },
+    {
+      "id": 291,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the evolutionary process where individuals with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    },
+    {
+      "id": 292,
+      "type": "math",
+      "prompt": "Compute 974 - 416.",
+      "expected": "558",
+      "response": "974 − 416 = 558.",
+      "score": 1.0
+    },
+    {
+      "id": 293,
+      "type": "capital",
+      "prompt": "What is the capital of poland?",
+      "expected": "warsaw",
+      "response": "The capital of Poland is **Warsaw**.",
+      "score": 1.0
+    },
+    {
+      "id": 294,
+      "type": "author",
+      "prompt": "Name the author of war and peace.",
+      "answers": [
+        "leo tolstoy",
+        "tolstoy"
+      ],
+      "response": "The novel *War and Peace* was written by **Leo Tolstoy**.",
+      "score": 1.0
+    },
+    {
+      "id": 295,
+      "type": "science",
+      "prompt": "Explain, in short, how evolution works.",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Evolution is the change in the genetic makeup of a population over successive generations. It works through a few key mechanisms:\n\n1. **Variation** – Individuals differ in their traits because of mutations (random changes in DNA), recombination during sexual reproduction, and other sources of genetic diversity.\n\n2. **Inheritance** – Most of these traits are passed from parents to offspring through genes.\n\n3. **Differential survival",
+      "score": 0.0
+    },
+    {
+      "id": 296,
+      "type": "math",
+      "prompt": "What is 825 minus 589?",
+      "expected": "236",
+      "response": "825 − 589 = 236.",
+      "score": 1.0
+    },
+    {
+      "id": 297,
+      "type": "capital",
+      "prompt": "Argentina's capital is?",
+      "expected": "buenos aires",
+      "response": "Argentina's capital is **Buenos Aires**.",
+      "score": 1.0
+    },
+    {
+      "id": 298,
+      "type": "author",
+      "prompt": "Who wrote '1984'?",
+      "answers": [
+        "george orwell",
+        "orwell"
+      ],
+      "response": "The novel **“1984”** was written by **George Orwell**.",
+      "score": 1.0
+    },
+    {
+      "id": 299,
+      "type": "science",
+      "prompt": "What is natural selection in one or two lines?",
+      "keywords": [
+        "natural selection",
+        "mutation",
+        "variation",
+        "survival"
+      ],
+      "response": "Natural selection is the evolutionary process where individuals with traits better suited to their environment survive and reproduce more successfully, passing those advantageous traits to the next generation.",
+      "score": 0.0
+    }
+  ]
+}

@@ -7,9 +7,7 @@ from peft import PeftModel
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# ------------------------
 # Base Agent Class
-# ------------------------
 class Agent:
     def __init__(self, medical_report=None, role=None, extra_info=None,
                  model_id="openai/gpt-oss-120b",
@@ -92,7 +90,6 @@ class Agent:
                 psychologist_report=self.extra_info.get("psychologist_report", ""),
                 pulmonologist_report=self.extra_info.get("pulmonologist_report", ""),
             )
-            # Use Groq API for final summary if available
             if hasattr(self, "client"):
                 return self._query_groq(prompt)
             return prompt  # fallback
@@ -104,16 +101,12 @@ class Agent:
                 return self._query_groq(prompt)
 
 
-# ------------------------
 # Local Psychologist Subclass
-# ------------------------
 class Psychologist(Agent):
     def __init__(self, medical_report, adapter_path="psychology_lora", **kwargs):
         super().__init__(medical_report, role="Psychologist", **kwargs)
 
-        # -------------------------
         # 4-bit quantization config with CPU offload
-        # -------------------------
         bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.float16,
@@ -122,9 +115,7 @@ class Psychologist(Agent):
             llm_int8_enable_fp32_cpu_offload=True  # ✅ offload to CPU if VRAM is tight
         )
 
-        # -------------------------
         # Load base model with automatic device mapping
-        # -------------------------
         base_model = AutoModelForCausalLM.from_pretrained(
             "google/gemma-2b",
             quantization_config=bnb_config,
@@ -132,16 +123,12 @@ class Psychologist(Agent):
             offload_folder="offload"  # optional: stores CPU-offloaded weights on disk
         )
 
-        # -------------------------
         # Load LoRA adapter
-        # -------------------------
         model = PeftModel.from_pretrained(base_model, adapter_path)
         model.eval()
         self.model = model
 
-        # -------------------------
         # Load tokenizer
-        # -------------------------
         tokenizer = AutoTokenizer.from_pretrained(adapter_path)
         if tokenizer.pad_token is None:
             tokenizer.pad_token = tokenizer.eos_token
@@ -160,9 +147,7 @@ class Psychologist(Agent):
                 pad_token_id=self.tokenizer.eos_token_id
             )
         return self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
-# ------------------------
 # Other specialized subclasses
-# ------------------------
 class Cardiologist(Agent):
     def __init__(self, medical_report, **kwargs):
         super().__init__(medical_report, "Cardiologist", **kwargs)
@@ -172,9 +157,7 @@ class Pulmonologist(Agent):
         super().__init__(medical_report, "Pulmonologist", **kwargs)
 
 
-# ------------------------
 # Multidisciplinary Team (auto local Psychologist)
-# ------------------------
 class MultidisciplinaryTeam(Agent):
     def __init__(self, cardiologist_report, psychologist_medical_report, pulmonologist_report,
                  psych_adapter_path="psychology_lora", **kwargs):

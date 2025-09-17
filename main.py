@@ -1,11 +1,5 @@
-# Importing the needed modules
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Upgrade packages
-# Importing required module
-import subprocess
 
-# Using system() method to
-# execute shell commands
+import subprocess
 subprocess.run(["pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121", "pip install --upgrade transformers accelerate bitsandbytes"], shell=True)
 import os
 import torch
@@ -14,13 +8,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dotenv import load_dotenv
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# Assuming your Agent classes are in a 'Utils' folder
 try:
     from Utils.Agents import Cardiologist, Psychologist, Pulmonologist, MultidisciplinaryTeam
 except ImportError:
     print("❌ Error: Could not import Agent classes. Make sure 'Utils/Agents.py' exists.")
     sys.exit(1)
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Loading API key from a .env file.
 load_dotenv(dotenv_path='.env')
@@ -32,19 +24,16 @@ def process_report_text(medical_report: str):
     """
     print("\n🩺 Processing the report with AI specialists... (this may take a moment)")
 
-    # Initialize the specialist agents with the medical report text
     agents = {
         "Cardiologist": Cardiologist(medical_report),
         "Psychologist": Psychologist(medical_report),
         "Pulmonologist": Pulmonologist(medical_report)
     }
 
-    # Function to run each agent and get their response
     def get_response(agent_name, agent):
         response = agent.run()
         return agent_name, response
 
-    # Run agents concurrently and collect their reports
     responses = {}
     with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {executor.submit(get_response, name, agent): name for name, agent in agents.items()}
@@ -52,18 +41,15 @@ def process_report_text(medical_report: str):
             agent_name, response = future.result()
             responses[agent_name] = response
 
-    # --- CORRECTED: pass the raw patient report for local Psychologist ---
     team_agent = MultidisciplinaryTeam(
         cardiologist_report=responses.get("Cardiologist", "No report generated."),
         psychologist_medical_report=medical_report,  # <-- raw report here
         pulmonologist_report=responses.get("Pulmonologist", "No report generated.")
     )
 
-    # Run the team agent to generate the final, synthesized diagnosis
     print("🤝 Synthesizing reports into a final diagnosis...")
     final_diagnosis = team_agent.run()
 
-    # --- Display the final diagnosis directly to the user ---
     print("\n" + "="*60)
     print("### ✅ Final Diagnosis:")
     print("="*60)
