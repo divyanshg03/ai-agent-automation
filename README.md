@@ -1,5 +1,6 @@
 # AI Agents for Medical Diagnostics
 ## The code was tested on google colab enabled with T4GPU accelerator,  GPUs with VRAM of <16GB will not be able to run the code 
+
 ## Overview
 This repository contains a framework for medical diagnostics using AI agents specialized in different medical domains. The system processes patient medical reports through multiple specialized agents (Cardiologist, Psychologist, Pulmonologist) and synthesizes their findings into comprehensive diagnostic recommendations.
 
@@ -100,3 +101,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - LangChain for the agent framework
 - Google Generative AI for the Gemini model
 - Flask for the web interface
+## Name: Divyansh Gupta
+## University : Indian Institute Of Technology, Patna
+## Mechanical Branch
