@@ -1,6 +1,4 @@
 
-import subprocess
-subprocess.run(["pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121", "pip install --upgrade transformers accelerate bitsandbytes"], shell=True)
 import os
 import torch
 import sys
