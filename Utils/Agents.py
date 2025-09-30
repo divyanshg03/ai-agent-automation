@@ -68,7 +68,7 @@ class Agent:
         return PromptTemplate.from_template(templates[self.role])
 
     def _query_groq(self, prompt: str):
-        """Send prompt to Groq LLaMA-3.1 model."""
+       
         response = self.client.chat.completions.create(
             model=self.model_id,
             messages=[
@@ -134,7 +134,7 @@ class Psychologist(Agent):
             tokenizer.pad_token = tokenizer.eos_token
         self.tokenizer = tokenizer
 
-    def _query_local(self, prompt: str, max_length=256, temperature=0.7, top_p=0.9):
+    def _query_local(self, prompt: str, max_length=2048, temperature=0.7, top_p=0.9):
         """Generate output using local LoRA model with offload-safe settings."""
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
         with torch.no_grad():
@@ -197,3 +197,4 @@ class MultidisciplinaryTeam(Agent):
         if hasattr(self, "client"):
             return self._query_groq(prompt)
         return prompt  # fallback to formatted prompt only
+    

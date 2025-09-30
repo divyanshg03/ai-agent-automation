@@ -5,11 +5,17 @@ venv/
 ENV/
 
 # Python cache
-_pycache_/
+__pycache__/
+*/__pycache__/
+Utils/__pycache__/
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
-
+*.pdb
+*.egg-info/
+*.egg
+*.manifest
 # Environment variables
 .env
 
